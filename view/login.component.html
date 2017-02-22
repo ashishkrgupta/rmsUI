@@ -1,0 +1,11 @@
+<form (ngSubmit)="getInToRMS()">
+  <md-input-container class="full-width" dividerColor="primary">
+    <input md-input placeholder="Username" type="text" [(ngModel)]="user.username" name='username'>
+  </md-input-container>
+  <md-input-container class="full-width">
+    <input md-input placeholder="Password" type="password" [(ngModel)]="user.password" name='pssword'>
+  </md-input-container>
+  <md-checkbox >Keep me loggedIn</md-checkbox>
+  <button md-button (click)='getInToRMS()' class="full-width buttonBlue">Get In To RMS</button>
+  <input type="submit" style="display: none;">
+</form>
